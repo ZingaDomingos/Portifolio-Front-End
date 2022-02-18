@@ -1,0 +1,541 @@
+@media  screen and (min-width: 320px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    main{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    
+    /*Estilização da section que contém as imagens da Via*/
+    .section-da-pista{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+        display: flex;
+        background-color: blue;
+        z-index: 990;
+    }
+    
+    /*Estilização da article que contém as imagens da Via*/
+    #article-imagens-pista{
+        width: 1080%;
+        height: 100%;
+        position: relative;
+        z-index: 997;
+        flex-direction: row;
+        background-image: url("../assets/via.jpg");
+        background-size: 10%;
+        display: flex;
+        transform: translateX(-60%);
+        align-items: center;
+        animation: rodar_da_estrada 12s 0s infinite linear;
+    }
+    
+    
+    /*Estilização das imagens da Via*/
+    .img-via{
+        width: 900px;
+        height: 80%;
+    }
+    
+    /*Animação que faz a via percorrer*/
+    @keyframes rodar_da_estrada {
+        from{
+            transform: translateX(-60%);
+        }
+        to{
+            transform: translateX(0%);
+        }
+    }
+    
+    /*Estilização da Div em que se encontra o carro*/
+    #div-em-que-se-encontra-o-carro{
+        height: 260px;
+        width: 400px;
+        transform: translateX(190%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        z-index: 998;
+        margin-top: 80%;
+        animation: fazer-o-carro-estar-em-andamento 10s 0s infinite linear;
+    }
+    
+    /*Animação que faz o carro percorrer da direita para esquerda*/
+    @keyframes fazer-o-carro-estar-em-andamento {
+        from{
+            transform: translateX(200%);
+        }
+        to{
+            transform: translateX(-350%);
+        }
+    }
+    
+    /*Estilização do carro*/
+    #img-carro{
+        width: 100%;
+    }
+    
+    /*Estilização do Pneu_1*/
+    #img-pneu_1{
+        width: 65px;
+        position: absolute;
+        margin-top: 94px;
+        margin-right: 252px;
+        animation: rodar_os_pneus 1.4s 0s infinite linear;
+    }
+    
+    /*Estilização do Pneu_2*/
+    #img-pneu_2{
+        width: 65px;
+        position: absolute;
+        margin-top: 92px;
+        margin-left: 282px;
+        animation: rodar_os_pneus 1.4s 0s infinite linear;
+    }
+    
+    /*animação que faz rodar os pneus*/
+    @keyframes rodar_os_pneus {
+        from{
+            transform: rotate(-0deg);
+        }
+        to{
+            transform: rotate(-1000deg);
+        }
+    }
+    
+    /*Estilização da main, conteúdo principal*/
+    #section-conteudo-de-login{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.576);
+        position: absolute;
+        z-index: 999;
+    }
+    
+    /*Estilização da Navi*/
+    nav{
+        height: 90px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.878);
+        border-bottom: 1px solid rgb(242, 111, 198);
+    }
+    
+    /*Estilização da Logo*/
+    #img-logo{
+        width: 58px;
+        height: 50px;
+        transform: rotate(-140deg);
+        border-radius: 100%;
+        cursor: pointer;
+    }
+    
+    /*Estilização de H1- Título Principal*/
+    h1{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        color: rgb(242, 111, 198);
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-variant: small-caps;
+    }
+    
+    /*Estilização da Article principal dos formularios*/
+    #article-principal{
+        width: 100%;
+        height: 100%;
+        margin: 0%;
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(126, 242, 111, 0);
+    } 
+    
+    /*Estilização da Div Formulário de login*/
+    #div-formulario-de-login{
+        width: 100%;
+        height: 70%;
+        transform: translateX(-100%);
+        position: absolute;
+        transition: 01s 0s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgba(33, 169, 211, 0);
+    }
+    
+    /*Estilização da Section em que contém os formularios Login e cadastro*/
+    #section-formularios{
+        width: 80%;
+        height: 38%;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        background-color: rgba(212, 130, 24, 0);
+    }
+    
+    /*Estilização da Div de Cadastro*/
+    #div-formulario-de-cadastro{
+        width: 100%;
+        height: 100%;
+        transition: 01s 0s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgba(111, 126, 242, 0);
+    }
+    
+    /*Estilização da Div que contém os Btn Login e Cadastro*/
+    #div-btn-login-e-cadsatro{
+        width: 50%;
+        position: relative;
+        z-index: 3;
+        background-color: rgba(139, 69, 19, 0);
+    }
+    
+    /*Estilização das Input*/
+    .input{
+        width: 70%;
+        margin-bottom: 20px;
+        border-top: transparent;
+        border-right: transparent;
+        border-left: transparent;
+        border-bottom: 1px solid rgb(242, 111, 198);
+        background-color: transparent;
+        color: white;
+        padding-left: 6px;
+        padding-bottom: 4px;
+        outline: none;
+    }
+    
+    /*Estilização do Btn entrar do form de Login*/
+    #btn-entrar-login{
+        width: 60%;
+        height: 24px;
+        background-color: transparent;
+        border-radius: 14px;
+        text-align: center;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgb(242, 111, 198);
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        position: relative;
+        cursor: pointer;
+        outline: none;
+    }
+    
+    /*Estilização do texto do Btn Entrar*/
+    #span-btn-entrar{
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+    }
+    
+    /*Estilização do Background cor de Rosa do Btn*/
+    #background-do-animado{
+        height: 100%;
+        width: 0px;
+        margin: 2px;
+        position: absolute;
+        z-index: 1;
+        transition: 02s 0s ease-in-out;
+        background-color: rgb(242, 111, 198);
+    }
+    
+    /*Efeito Hover do btn Login*/
+    #btn-entrar-login:hover #background-do-animado{
+        width: 100%;
+        margin: 2px;
+        background-color: rgb(242, 111, 198);
+    }
+    
+    /*Estilização do btn Cadastrar*/
+    #btn-cadastrar{
+        width: 65%;
+        height: 24px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border-radius: 14px;
+        border: 1px solid rgb(242, 111, 198);
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        position: relative;
+        cursor: pointer;
+        outline: none;
+    }
+    
+    /*Efeito Hover do btn Cadastrar*/
+    #span-btn-cadastrar{
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+    }
+    
+    /*Efeito Hover do btn Cadastrar*/
+    #btn-cadastrar:hover #background-do-animado{
+        width: 100%;
+        margin: 2px;
+        background-color: rgb(242, 111, 198);
+    }
+    
+    /*Estilização do Btn Cadastro*/
+    #btn-cadastro{
+        color: white;
+        border-top: transparent;
+        border-left: transparent;
+        border-right: transparent;
+        border-bottom: 1px solid rgb(242, 111, 198);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        margin-left: 10px;
+        background-color: transparent;
+        cursor: pointer;
+        outline: none;
+    }
+    
+    /*Estilização do Btn Login*/
+    #btn-login{
+        color: white;
+        border-top: transparent;
+        border-left: transparent;
+        border-right: transparent;
+        border-bottom: 1px solid rgba(242, 111, 198, 0);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        margin-left: 0px;
+        background-color: transparent;
+        cursor: pointer;
+        outline: none;
+    }
+    
+}
+
+@media screen and (min-width: 600px){
+    
+    /*Estilização da Div em que se encontra o carro*/
+    #div-em-que-se-encontra-o-carro{
+        height: 260px;
+        width: 400px;
+        transform: translateX(190%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        z-index: 998;
+        margin-top: 80%;
+        animation: fazer-o-carro-estar-em-andamento 10s 0s infinite linear;
+    }
+
+    /*Estilização da Div que contém os Btn Login e Cadastro*/
+    #div-btn-login-e-cadsatro{
+        width: 360px;
+        position: relative;
+        z-index: 3;
+        background-color: rgba(139, 69, 19, 0);
+    }
+    
+    /*Estilização das Input*/
+    .input{
+        width: 360px;
+        margin-bottom: 20px;
+        border-top: transparent;
+        border-right: transparent;
+        border-left: transparent;
+        border-bottom: 1px solid rgb(242, 111, 198);
+        background-color: transparent;
+        color: white;
+        padding-left: 6px;
+        padding-bottom: 4px;
+        outline: none;
+    }
+    
+    /*Estilização do Btn entrar do form de Login*/
+    #btn-entrar-login{
+        width: 300px;
+        height: 24px;
+        background-color: transparent;
+        border-radius: 14px;
+        text-align: center;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgb(242, 111, 198);
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        position: relative;
+        cursor: pointer;
+        outline: none;
+    }
+    
+    /*Estilização do texto do Btn Entrar*/
+    #span-btn-entrar{
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+    }
+    
+    /*Estilização do Background cor de Rosa do Btn*/
+    #background-do-animado{
+        height: 100%;
+        width: 0px;
+        margin: 2px;
+        position: absolute;
+        z-index: 1;
+        transition: 02s 0s ease-in-out;
+        background-color: rgb(242, 111, 198);
+    }
+    
+    /*Efeito Hover do btn Login*/
+    #btn-entrar-login:hover #background-do-animado{
+        width: 100%;
+        margin: 2px;
+        background-color: rgb(242, 111, 198);
+    }
+    
+    /*Estilização do btn Cadastrar*/
+    #btn-cadastrar{
+        width: 300px;
+        height: 24px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border-radius: 14px;
+        border: 1px solid rgb(242, 111, 198);
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        position: relative;
+        cursor: pointer;
+        outline: none;
+    }
+    
+    /*Efeito Hover do btn Cadastrar*/
+    #span-btn-cadastrar{
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+    }
+    
+    /*Efeito Hover do btn Cadastrar*/
+    #btn-cadastrar:hover #background-do-animado{
+        width: 100%;
+        margin: 2px;
+        background-color: rgb(242, 111, 198);
+    }
+    
+    /*Estilização do Btn Cadastro*/
+    #btn-cadastro{
+        color: rgb(255, 255, 255);
+        border-top: transparent;
+        border-left: transparent;
+        border-right: transparent;
+        border-bottom: 1px solid rgb(242, 111, 198);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        margin-left: 10px;
+        background-color: transparent;
+        cursor: pointer;
+        outline: none;
+    }
+    
+    /*Estilização do Btn Login*/
+    #btn-login{
+        color: white;
+        border-top: transparent;
+        border-left: transparent;
+        border-right: transparent;
+        border-bottom: 1px solid rgba(242, 111, 198, 0);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        margin-left: 0px;
+        background-color: transparent;
+        cursor: pointer;
+        outline: none;
+    }
+    
+
+}
+
+@media screen and (min-width: 600px){
+    
+    nav{
+        padding-left: 30px;
+        display: flex;
+        justify-content: left;
+        flex-direction: row;
+    }
+
+    h1{
+        width: 220px;
+    }
+
+    /*Estilização da Div em que se encontra o carro*/
+    #div-em-que-se-encontra-o-carro{
+        height: 260px;
+        width: 400px;
+        transform: translateX(190%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        z-index: 998;
+        margin-top: 22%;
+        animation: fazer-o-carro-estar-em-andamento 10s 0s infinite linear;
+    }
+
+
+}
